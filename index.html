@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars - Wiki Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/brawl-stars-logo.png" alt="Brawl Stars Logo" class="logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#brawlers">Brawlers</a></li>
+                <li><a href="#modos">Modos de Juego</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar brawler, mapa...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1>Domina el Campo de Batalla</h1>
+                <p>Únete a millones de jugadores en esta emocionante arena de combate 3v3 y battle royale</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Descargar Ahora</a>
+                    <a href="#brawlers" class="btn btn-secondary">Explorar Brawlers</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-brawl-stars.png" alt="Personajes de Brawl Stars">
+            </div>
+        </section>
+
+        <section id="brawlers" class="brawlers-section">
+            <h2 class="section-title">Brawlers</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-rarity="all">Todos</button>
+                <button class="filter-btn" data-rarity="common">Comunes</button>
+                <button class="filter-btn" data-rarity="rare">Raros</button>
+                <button class="filter-btn" data-rarity="super-rare">Super Raros</button>
+                <button class="filter-btn" data-rarity="epic">Épicos</button>
+                <button class="filter-btn" data-rarity="mythic">Míticos</button>
+                <button class="filter-btn" data-rarity="legendary">Legendarios</button>
+                <button class="filter-btn" data-rarity="chromatic">Cromáticos</button>
+            </div>
+            <div class="brawlers-grid" id="brawlers-container">
+                <!-- Los brawlers se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <section id="modos" class="game-modes">
+            <h2 class="section-title">Modos de Juego</h2>
+            <div class="modes-container">
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/gem-grab.png" alt="Atrapagemas">
+                    </div>
+                    <h3>Atrapagemas</h3>
+                    <p>Recoge gemas y manténlas para ganar. ¡Pero cuidado! Si te eliminan, perderás todas tus gemas.</p>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/brawl-ball.png" alt="Balón Brawl">
+                    </div>
+                    <h3>Balón Brawl</h3>
+                    <p>Un emocionante partido de fútbol donde el objetivo es marcar dos goles antes que el equipo rival.</p>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/heist.png" alt="Atraco">
+                    </div>
+                    <h3>Atraco</h3>
+                    <p>Un equipo defiende su caja fuerte mientras el otro intenta destruirla antes de que se acabe el tiempo.</p>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/bounty.png" alt="Caza Estelar">
+                    </div>
+                    <h3>Caza Estelar</h3>
+                    <p>Elimina oponentes para ganar estrellas. El equipo con más estrellas al final gana.</p>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/siege.png" alt="Asedio">
+                    </div>
+                    <h3>Asedio</h3>
+                    <p>Recoge tornillos para construir un robot que ataque la base enemiga.</p>
+                </div>
+                <div class="mode-card">
+                    <div class="mode-icon">
+                        <img src="icons/solo-showdown.png" alt="Duelo Solitario">
+                    </div>
+                    <h3>Duelo Solitario</h3>
+                    <p>Battle Royale donde 10 jugadores luchan hasta que solo queda uno en pie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="events-section">
+            <h2 class="section-title">Eventos Especiales</h2>
+            <div class="events-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Junio 2023</div>
+                    <div class="timeline-content">
+                        <h3>Brawl Pass Temporada 15</h3>
+                        <p>Nuevo brawler cromático, skins exclusivas y recompensas increíbles.</p>
+                        <img src="images/brawl-pass-season15.jpg" alt="Brawl Pass Temporada 15">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mayo 2023</div>
+                    <div class="timeline-content">
+                        <h3>Evento de Aniversario</h3>
+                        <p>Celebra el aniversario de Brawl Stars con recompensas dobles, skins especiales y sorpresas.</p>
+                        <img src="images/brawl-anniversary.jpg" alt="Evento de Aniversario">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Abril 2023</div>
+                    <div class="timeline-content">
+                        <h3>Torneo Mundial</h3>
+                        <p>Los mejores equipos del mundo compiten por el título y un gran premio.</p>
+                        <img src="images/brawl-world-cup.jpg" alt="Torneo Mundial">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="news-section">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="images/news-update.jpg" alt="Nueva Actualización">
+                    <div class="news-content">
+                        <h3>Actualización de Junio</h3>
+                        <p class="news-date">15 Junio 2023</p>
+                        <p>Nuevo brawler, balanceos, mapas frescos y correcciones de bugs.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/new-brawler.jpg" alt="Nuevo Brawler">
+                    <div class="news-content">
+                        <h3>¡Llega Buzz!</h3>
+                        <p class="news-date">10 Junio 2023</p>
+                        <p>El nuevo brawler cromático llega con habilidades sorprendentes.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/esports-news.jpg" alt="Noticias eSports">
+                    <div class="news-content">
+                        <h3>Abren inscripciones para torneos</h3>
+                        <p class="news-date">5 Junio 2023</p>
+                        <p>Regístrate ahora para participar en los próximos torneos oficiales.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Brawl Stars</h4>
+                <p>Brawl Stars es un juego de arena de batalla y héroe multijugador desarrollado por Supercell. Lanzado en 2018, se ha convertido en uno de los juegos móviles más populares del mundo.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Descargar</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="download-badges">
+                    <img src="images/app-store-badge.png" alt="Descargar en App Store">
+                    <img src="images/google-play-badge.png" alt="Disponible en Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brawl Stars Wiki. No afiliado con Supercell. Todos los derechos de los personajes pertenecen a Supercell.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
